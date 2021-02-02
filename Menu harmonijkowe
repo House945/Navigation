@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kurs Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/wlasny.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+
+    <header class="row">
+      <div class="col-lg-6">
+        <img src="images/logo_sk.jpg" alt="Strefa Kursów" class="img-responsive">
+      </div>
+      <div class="col-lg-6">
+        <h2>Wydawnictwo Strefa Kursów</h2>
+      </div>
+    </header>
+
+    <div class="jumbotron">
+      <img src="images/logo_sk_top.png" alt="logo" class="pull-right img-responsive">
+      <h2>Inni dopiero się uczą Ty już potrafisz</h2>
+      <p>ODBIERZ 5% RABATU, regularne zniżki na nowości, informacje o darmowych filmach</p>
+    </div>
+  
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+            <span class="sr-only">Nawigacja</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">home</a></li>
+            <li class="active"><a href="#">oferta</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown">kursy <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">programowanie</a></li>
+                <li><a href="#">grafika</a></li>
+                <li><a href="#">wideo</a></li>
+                <li><a href="#">DTP</a></li>
+              </ul>
+            </li>
+            <li><a href="#">promocje</a></li>
+            <li><a href="#">kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <ol class="breadcrumb">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span> home</a></li>
+      <li class="active">FAQ</li>
+    </ol>
+
+    <div class="row">
+
+      <article class="col-lg-12">
+        <h2>Pytania i odpowiedzi:</h2>
+
+      <div class="panel-group"  id="according">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="#pytanie1" data-toggle="collapse" data-parent="#according">
+                <h4>
+                    Jakie są wymagania kursów?
+                </h4>
+              </a>  
+            </div>
+
+              <div id="pytanie1" class="panel-collapse collapse ">
+                <div class="panel-body">  
+                   Do odtwarzania potrzebna jest przeglądarka internetowa (Internet Explorer, Firefox, Chrome, itp.) wyposażona w Adobe Flash Player w wersji 9 lub nowszej. Najnowszą wersję Flash Player można ściągnąć tutaj : http://get.adobe.com/pl/flashplayer/. Jeżeli poniższy film odtwarza się prawidłowo to masz pewność, że zakupiony kurs będzie działał na twoim komputerze: Kurs: wersja demo Wersje elektroniczne to skompresowane pliki rar. Przez użyciem należy je rozpakować za pomocą odpowiedniego programu (np. WinRar www.winrar.pl/winrar/pobierz). 
+                </div>
+              </div>
+          </div>
+
+      <div class="panel-group"  id="according">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="#pytanie2" data-toggle="collapse" data-parent="#according">              
+                <h4>
+                    Jak wygląda zakup wersji elektronicznej?
+                </h4>
+              </a>  
+            </div>
+
+              <div id="pytanie2" class="panel-collapse collapse">
+                <div class="panel-body">  
+
+              Po zatwierdzeniu płatności otrzymasz email w którym znajduje się odnośnik za pomocą, którego będziesz mógł pobrać zakupiony kurs. Możesz podjąć 5 prób pobrania zakupionego kursu. Odnośnik będzie aktywny przez 5 dni licząc od pierwszej próby pobrania. Jeśli wystąpią problemy podczas pobierania skontaktuj się z nami przez telefon lub e-mail, a my zwiększymy limit.
+                </div>
+              </div>
+            </div>
+
+      <div class="panel-group"  id="according">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <a href="#pytanie3" data-toggle="collapse" data-parent="#according">
+                <h4>
+                    Jak skrócić czas oczekiwania na dostęp do wersji elektronicznej?
+                </h4>
+              </a>  
+            </div>
+
+              <div id="pytanie3" class="panel-collapse collapse">
+                <div class="panel-body">  
+
+                  Czas oczekiwania uzależniony jest od sposobu płatności. Jeśli skorzystasz z płatności on-line (payu.pl, dotpay.pl, paypal.pl) to email z odnośnikiem do pobrania kursu zostanie wysłany przez zautomatyzowany system. Czas oczekiwania nie powinien przekroczyć kilku minut. Jeśli zdecydujesz się na wykonanie zwykłego przelewu bankowego to będziemy musieli ręcznie zatwierdzić twoją wpłatę po tym jak zostanie ona zaksięgowana na naszym koncie. W tym wypadku czas oczekiwania może się przedłużyć
+
+                </div>
+              </div>
+            </div>
+      </div>        
+      </article>
+
+    </div>
+    <hr>
+    <footer class="row">
+      <p><small>Copyright 2013 &copy; StrefaKursów.pl</small></p>
+    </footer>
+  </div>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $('.nav-tabs a:first').tab('show')
+      })
+    </script>
+  </body>
+</html>
